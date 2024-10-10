@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>To-Do List</h1>
+            <button id="newListBtn">Create New List</button>
+        </header>
+
+        <div class="task-list-container">
+            <aside class="list-sidebar">
+                <ul id="listContainer">
+                    <!-- Lists will appear here -->
+                </ul>
+            </aside>
+
+            <main class="task-content">
+                <div id="taskListContent">
+                    <!-- Task content will appear here -->
+                </div>
+            </main>
+        </div>
+
+        <!-- New List Modal -->
+        <div id="listModal" class="modal">
+            <div class="modal-content">
+                <h2>Create a New List</h2>
+                <input type="text" id="newListName" placeholder="List Name">
+                <button id="saveListBtn">Save</button>
+                <button id="closeModal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
